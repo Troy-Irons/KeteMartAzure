@@ -202,6 +202,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202610060552255_InitialCreate.cs" />
+    <Compile Include="Migrations\202610060552255_InitialCreate.Designer.cs">
+      <DependentUpon>202610060552255_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202610060652037_InitialCreate1.cs" />
+    <Compile Include="Migrations\202610060652037_InitialCreate1.Designer.cs">
+      <DependentUpon>202610060652037_InitialCreate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\MyDatabaseContext.cs" />
     <Compile Include="Models\Todo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -226,6 +235,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="Properties\PublishProfiles\KeteMart-WebApp - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <None Include="Scripts\jquery-3.6.0.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -275,6 +285,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202610060552255_InitialCreate.resx">
+      <DependentUpon>202610060552255_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202610060652037_InitialCreate1.resx">
+      <DependentUpon>202610060652037_InitialCreate1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
